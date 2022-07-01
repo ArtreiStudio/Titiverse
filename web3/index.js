@@ -58,10 +58,11 @@ async function connect() {
       },
       package: window.DeFiConnect.DeFiWeb3Connector,
       options: {
-        supportedChainIds: [56],
+        supportedChainIds: [1, 56],
         rpc: {
           1: "https://mainnet.infura.io/v3/31a6f00d65554d31825dfeb9c5c265fe",
-          25: "https://evm.cronos.org/" // cronos mainet
+          25: "https://evm.cronos.org/", // cronos mainet
+	    56: "https://bsc-dataseed.binance.org/" //bsc
         },
         pollingInterval: 15000
       },
